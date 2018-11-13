@@ -64,7 +64,10 @@ public class Stack {
 				}
 			}
 		}
-		
+		if(brackets.length() > 0) {
+			error = "Error : Missing " + nextOpen;
+			return error;
+		}
 		return "no error";
 	}
 		
