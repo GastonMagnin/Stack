@@ -3,7 +3,7 @@ package Stacks;
 public class Main {
 	public static void main(String[] args) {
 		Stack s = new Stack(100);
-		String test = "asdghashdjalsdh(asldjifaf)jlksafaskh(klhsuifh))klsjdfasdlöh";
+		String test = "((asdghashdjalsdh(asldjifaf)jlksafaskh(klhsuifh))";
 		for(int i = 0; i < test.length(); i++) {
 			s.push(test.charAt(i));
 		}
