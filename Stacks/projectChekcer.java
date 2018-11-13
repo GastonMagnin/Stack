@@ -14,8 +14,9 @@ public class projectChekcer {
 			auc.connect();
 			int code;
 			if((code = auc.getResponseCode()) != 404) {
-				System.out.println(i + " " +auc.getResponseCode());
+				System.out.println(i + " " + code);
 			}
+			auc.disconnect();
 			
 		}
 	}
